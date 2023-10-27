@@ -20,7 +20,7 @@ haproxy_cfg = "/etc/haproxy/haproxy.cfg"
 service_name = "haproxy"
 
 # Jinja2 template path 
-template_env = Environment(loader=FileSystemLoader('.'))  # Puedes ajustar la ruta según tu estructura de archivos
+template_env = Environment(loader=FileSystemLoader('.'))  
 
 # Load Jinja2 template from an external file
 haproxy_template = template_env.get_template('./haproxy.cfg.j2')
